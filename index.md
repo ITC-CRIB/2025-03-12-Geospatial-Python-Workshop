@@ -3,20 +3,20 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "FIXME"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["instructor one", "instructor two"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+venue: "University of Twente"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+address: "LA 2301, Langezijds, Hallenweg 8, Enschede"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+country: "NL"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
+language: "EN"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
+latitude: "52.238"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "6.853"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+humandate: "Mar 12-13, 2025"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:30 am - 05:00 pm CEST For Day 1, 9:15 am - 12:30 pm CEST for Day 2"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+startdate: 2025-03-12      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2025-03-13        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Adhitya Bhawiyuga", "Jay Gohil"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["helper one", "helper two"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["first@example.org","second@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+email: ["j.h.gohil@utwente.nl","a.bhawiyuga@utwente.nl"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: https://notes.crib.utwente.nl/2025-03-12-Geospatial-Python-Workshop-Day1  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 what3words:           # optional: what3words (https://what3words.com) address of the workshop venue, without leading slashes e.g. "globe.lessening.computers"
 ---
@@ -37,7 +37,7 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 {% comment %}
 8< ============= For a workshop delete from here =============
 For a workshop please delete the following block until the next dashed-line
-{% endcomment %}
+
 
 
 <div class="alert alert-danger">
@@ -58,7 +58,7 @@ fields in `_config.yml`
 {% comment %}
 8< ============================= until here ==================
 {% endcomment %}
-
+{% endcomment %}
 {% comment %}
 Check DC curriculum
 {% endcomment %}
@@ -116,17 +116,17 @@ Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
 
+
+<strong>Python</strong> is one of the most popular programming languages for data science and analytics, with a large and steadily growing community in the field of Earth and Space Sciences. In this workshop, we will help participants with a working knowledge of Python to familiarize with the world of geospatial raster and vector data. We will introduce a set of tools from the Python ecosystem and show how these can be used to carry out practical geospatial data analysis tasks. In particular, we will consider satellite images and public geo-datasets and demonstrate how these can be opened, explored, manipulated, combined, and visualized using Python.
 <p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
-helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.
-<p align="center">
-  <em>
-  <strong>Want to learn more and stay engaged with The Carpentries?</strong> Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
-Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
-  </em>
+This workshop organized by the Center of Expertise in Big Geodata Science (CRIB) will cover the following aspects of geospatial data processing:
+<ul>
+    <li>Basics of raster and vector data and coordinate reference systems (CRSs)</li>
+    <li>Access satellite imagery using Python</li>
+    <li>Read and visualize and process raster/vector data</li>
+    <li>Data analysis with the combination of raster and vector data</li>
+    <li>Parallel computation for geospatial data</li>
+</ul>
 </p>
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
